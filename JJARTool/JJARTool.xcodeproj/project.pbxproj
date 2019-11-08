@@ -14,7 +14,29 @@
 		E50CFBBA2375510300C2348E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50CFBB92375510300C2348E /* Assets.xcassets */; };
 		E50CFBBD2375510300C2348E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50CFBBB2375510300C2348E /* LaunchScreen.storyboard */; };
 		E50CFBC02375510300C2348E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E50CFBBF2375510300C2348E /* main.m */; };
+		E50CFBD82375627A00C2348E /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBC9237553C800C2348E /* AipBase.framework */; };
+		E50CFBD92375627A00C2348E /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBC9237553C800C2348E /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E50CFBDB2375627B00C2348E /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBC8237553C800C2348E /* AipOcrSdk.framework */; };
+		E50CFBDC2375627B00C2348E /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBC8237553C800C2348E /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E50CFBDD2375627D00C2348E /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBCA237553C800C2348E /* IdcardQuality.framework */; };
+		E50CFBDE2375627D00C2348E /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBCA237553C800C2348E /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E50CFBDA2375627A00C2348E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E50CFBD92375627A00C2348E /* AipBase.framework in Embed Frameworks */,
+				E50CFBDC2375627B00C2348E /* AipOcrSdk.framework in Embed Frameworks */,
+				E50CFBDE2375627D00C2348E /* IdcardQuality.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E50CFBAA2375510200C2348E /* JJARTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJARTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +51,9 @@
 		E50CFBBC2375510300C2348E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E50CFBBE2375510300C2348E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E50CFBBF2375510300C2348E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E50CFBC8237553C800C2348E /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
+		E50CFBC9237553C800C2348E /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
+		E50CFBCA237553C800C2348E /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50CFBD82375627A00C2348E /* AipBase.framework in Frameworks */,
+				E50CFBDB2375627B00C2348E /* AipOcrSdk.framework in Frameworks */,
+				E50CFBDD2375627D00C2348E /* IdcardQuality.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +89,7 @@
 		E50CFBAC2375510200C2348E /* JJARTool */ = {
 			isa = PBXGroup;
 			children = (
+				E50CFBC6237553C800C2348E /* framework */,
 				E50CFBAD2375510200C2348E /* AppDelegate.h */,
 				E50CFBAE2375510200C2348E /* AppDelegate.m */,
 				E50CFBB02375510200C2348E /* SceneDelegate.h */,
@@ -76,6 +105,24 @@
 			path = JJARTool;
 			sourceTree = "<group>";
 		};
+		E50CFBC6237553C800C2348E /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				E50CFBC7237553C800C2348E /* lib */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		E50CFBC7237553C800C2348E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E50CFBC8237553C800C2348E /* AipOcrSdk.framework */,
+				E50CFBC9237553C800C2348E /* AipBase.framework */,
+				E50CFBCA237553C800C2348E /* IdcardQuality.framework */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +133,7 @@
 				E50CFBA62375510200C2348E /* Sources */,
 				E50CFBA72375510200C2348E /* Frameworks */,
 				E50CFBA82375510200C2348E /* Resources */,
+				E50CFBDA2375627A00C2348E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,14 +337,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WSSN499SLU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JJARTool/framework/lib",
+				);
 				INFOPLIST_FILE = JJARTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snailgames..JJARTool;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailgames.JJARTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = UniversalSnailDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -305,14 +361,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WSSN499SLU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JJARTool/framework/lib",
+				);
 				INFOPLIST_FILE = JJARTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snailgames..JJARTool;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailgames.JJARTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = UniversalSnailDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
