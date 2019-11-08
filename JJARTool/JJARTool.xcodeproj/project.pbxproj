@@ -20,6 +20,8 @@
 		E50CFBDC2375627B00C2348E /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBC8237553C800C2348E /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E50CFBDD2375627D00C2348E /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBCA237553C800C2348E /* IdcardQuality.framework */; };
 		E50CFBDE2375627D00C2348E /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E50CFBCA237553C800C2348E /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E50CFBE22375678A00C2348E /* JJARScanService.m in Sources */ = {isa = PBXBuildFile; fileRef = E50CFBE12375678A00C2348E /* JJARScanService.m */; };
+		E50CFBE52375691F00C2348E /* JJARCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = E50CFBE42375691F00C2348E /* JJARCameraView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +56,10 @@
 		E50CFBC8237553C800C2348E /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
 		E50CFBC9237553C800C2348E /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
 		E50CFBCA237553C800C2348E /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
+		E50CFBE02375678A00C2348E /* JJARScanService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJARScanService.h; sourceTree = "<group>"; };
+		E50CFBE12375678A00C2348E /* JJARScanService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJARScanService.m; sourceTree = "<group>"; };
+		E50CFBE32375691F00C2348E /* JJARCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJARCameraView.h; sourceTree = "<group>"; };
+		E50CFBE42375691F00C2348E /* JJARCameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJARCameraView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		E50CFBAC2375510200C2348E /* JJARTool */ = {
 			isa = PBXGroup;
 			children = (
+				E50CFBDF2375675200C2348E /* ARScan */,
 				E50CFBC6237553C800C2348E /* framework */,
 				E50CFBAD2375510200C2348E /* AppDelegate.h */,
 				E50CFBAE2375510200C2348E /* AppDelegate.m */,
@@ -121,6 +128,17 @@
 				E50CFBCA237553C800C2348E /* IdcardQuality.framework */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		E50CFBDF2375675200C2348E /* ARScan */ = {
+			isa = PBXGroup;
+			children = (
+				E50CFBE02375678A00C2348E /* JJARScanService.h */,
+				E50CFBE12375678A00C2348E /* JJARScanService.m */,
+				E50CFBE32375691F00C2348E /* JJARCameraView.h */,
+				E50CFBE42375691F00C2348E /* JJARCameraView.m */,
+			);
+			path = ARScan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +214,9 @@
 			files = (
 				E50CFBB52375510200C2348E /* ViewController.m in Sources */,
 				E50CFBAF2375510200C2348E /* AppDelegate.m in Sources */,
+				E50CFBE22375678A00C2348E /* JJARScanService.m in Sources */,
 				E50CFBC02375510300C2348E /* main.m in Sources */,
+				E50CFBE52375691F00C2348E /* JJARCameraView.m in Sources */,
 				E50CFBB22375510200C2348E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
